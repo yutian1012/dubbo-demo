@@ -1,0 +1,10 @@
+spring:
+ dubbo:
+  application:
+   name: gateway
+  registry:
+   address: zookeeper://127.0.0.1:2181
+   register: false
+  scan: org.sjq.dubbo.gateway
+
+server.port: 9091
