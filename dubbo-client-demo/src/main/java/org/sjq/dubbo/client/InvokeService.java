@@ -7,6 +7,6 @@ import com.alibaba.dubbo.config.annotation.Reference;
 
 @Component
 public class InvokeService {
-	@Reference(mock="return 服务关闭")
+	@Reference(timeout=2000)
 	public IHello hello;
 }

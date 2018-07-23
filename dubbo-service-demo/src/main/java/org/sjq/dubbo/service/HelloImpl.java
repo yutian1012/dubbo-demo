@@ -4,7 +4,7 @@ import org.sjq.dubbo.api.IHello;
 
 import com.alibaba.dubbo.config.annotation.Service;
 
-@Service(loadbalance="roundrobin")
+@Service(cluster="failfast")
 public class HelloImpl implements IHello{
 
 	@Override
